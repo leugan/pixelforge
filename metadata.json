@@ -1,0 +1,5 @@
+{
+  "name": "幻影画布 | PixelForge",
+  "description": "An intelligent background removal tool powered by Gemini. Upload or paste images to instantly isolate subjects with transparent backgrounds.",
+  "requestFramePermissions": []
+}
