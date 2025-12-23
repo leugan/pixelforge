@@ -52,14 +52,21 @@ export const BackgroundRemover: React.FC<BackgroundRemoverProps> = ({ lang }) =>
       
     } catch (err: any) {
       console.error(err);
+      let errorMessage = err.message || t.errorGeneric;
+      
+      // Check for 429/Quota error messages to show a more helpful text
+      if (errorMessage.includes('429') || errorMessage.toLowerCase().includes('quota')) {
+        errorMessage = t.errorQuota || errorMessage;
+      }
+      
       setProcessing({ 
         isLoading: false, 
-        error: err.message || t.errorGeneric
+        error: errorMessage
       });
     } finally {
       setProcessing(prev => ({ ...prev, isLoading: false }));
     }
-  }, [t.errorGeneric]);
+  }, [t.errorGeneric, t.errorQuota]);
 
   const handleMagicWand = useCallback(async (x: number, y: number, tolerance: number) => {
     if (!imageState) return;

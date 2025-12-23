@@ -41,6 +41,7 @@ export const translations = {
     dropSub: "JPG, PNG or WEBP",
     dropPaste: "Ctrl + V to paste",
     errorGeneric: "Something went wrong",
+    errorQuota: "API usage limit exceeded. Please wait a moment or check your quota.",
     processing: "Processing...",
     copyright: "© 2024 PixelForge. Powered by Google Gemini."
   },
@@ -84,6 +85,7 @@ export const translations = {
     dropSub: "支持 JPG, PNG, WEBP",
     dropPaste: "Ctrl + V 粘贴",
     errorGeneric: "发生错误",
+    errorQuota: "API 调用次数超限，请稍候再试或检查配额。",
     processing: "处理中...",
     copyright: "© 2024 幻影画布. 由 Google Gemini 驱动."
   }

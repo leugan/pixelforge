@@ -47,7 +47,7 @@
 1.  **克隆项目**
 
     ```bash
-    git clone https://github.com/leugan/pixelforge.git
+    git clone https://github.com/your-username/pixelforge.git
     cd pixelforge
     ```
 
